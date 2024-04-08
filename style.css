@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ff8000;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background: #ff8000;
+}
+
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .head h1 {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+header .head h1 span {
+  color: #fff;
+}
+header .head .menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .head .menu ul li {
+  margin: 10px;
+  position: relative;
+  padding: 15px;
+}
+header .head .menu ul li a {
+  color: #fff;
+}
+
+header .head .menu ul li::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -10px;
+  width: 3px;
+  height: 4.8rem;
+  background: #fff;
+}
+
+.section .top_img {
+  width: auto;
+  height: 350px;
+  position: relative;
+}
+.section .top_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.section .sec_1 {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.section .sec_1 .box {
+  width: 30%;
+  height: 15rem;
+  line-height: 1.33;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  padding: 20px;
+  position: absolute;
+  top: 20rem;
+  left: 30px;
+}
+.section .sec_1 .box_1 {
+  left: 33.44rem;
+}
+.section .sec_1 .box_2 {
+  left: 65.1rem;
+}
+
+.sec_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+}
+.sec_2 ul {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 15%;
+  position: relative;
+}
+.sec_2 ul::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 11.7rem;
+  width: 3px;
+  height: 12rem;
+  background: #fff;
+}
+.sec_2 ul li {
+  width: 100%;
+  margin: 6px 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.sec_2 .pera {
+  margin: 0px 0px 0px 45px;
+}
+.sec_2 .pera p {
+  margin: 20px 0;
+}
+
+
+
+@media all and (max-width: 1488px) {
+  .section .sec_1 .box {
+    width: 25%;
+    line-height: 1;
+    left: 61px;
+  }
+  section .sec_1 .box_1 {
+    left: 33.44rem;
+  }
+  .section .sec_1 .box_2 {
+    left: 63.1rem;
+  }
+}
